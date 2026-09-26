@@ -1,0 +1,31 @@
+{
+  "first_round": {
+    "valid_count": 5,
+    "mean_ms": 12.0,
+    "invalid_ids": [
+      "r3",
+      "r4"
+    ]
+  },
+  "second_round": {
+    "valid_count": 3,
+    "mean_ms": 20.0,
+    "invalid_ids": [
+      "r3",
+      "r4"
+    ]
+  },
+  "input_unchanged": true,
+  "first_round_files_preserved": true,
+  "handoff_owner": "guide-b",
+  "first_submit_status": "pending_review",
+  "final_revision": 9,
+  "last_accepted": "T001",
+  "integrity": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "boundary": "只检查记录一致性和文件内容，不证明测试执行、身份真实或用户验收。"
+  },
+  "evidence_boundary": "Scripted role labels and teaching dialogue; no model calls or independent agents."
+}

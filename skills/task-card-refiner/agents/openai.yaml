@@ -1,0 +1,4 @@
+interface:
+  display_name: "任务卡整理"
+  short_description: "从项目想法开始按需追问，整理可直接交给主线管家的规范任务卡"
+  default_prompt: "使用 $task-card-refiner，根据我的想法、目标和背景按需追问，结束后生成一份可直接复制给主线管家的项目启动任务卡。"

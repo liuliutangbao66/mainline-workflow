@@ -1,0 +1,4 @@
+interface:
+  display_name: "主线管家"
+  short_description: "管理项目主线、阶段交付与验收，主动维护当前状态并准备跨会话交接"
+  default_prompt: "使用 $mainline 管理这个项目，协助我明确目标、推进阶段、审查交付并维护接手状态。"

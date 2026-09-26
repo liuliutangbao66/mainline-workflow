@@ -1,0 +1,395 @@
+[
+  {
+    "command": "init",
+    "actor": "guide-a",
+    "exit_code": 0,
+    "result": {
+      "ok": true,
+      "revision": 0,
+      "entry": ".workflow/STATE.md",
+      "integration": "已创建项目AGENTS入口"
+    }
+  },
+  {
+    "command": "task",
+    "actor": "guide-a",
+    "exit_code": 0,
+    "result": {
+      "ok": true,
+      "name": "CSV 耗时统计示例",
+      "version": "0.1.0",
+      "revision": 1,
+      "owner": "guide-a",
+      "goal": "离线汇总有效耗时并记录无效行，不改原始CSV",
+      "summary": "已准备 T001：交付可复算的离线统计脚本与结果",
+      "next_action": "核对任务及实际环境后，由 demo-worker 开始当前阶段。",
+      "active_task": "T001",
+      "last_accepted": null,
+      "entry": ".workflow/STATE.md",
+      "task_status": "ready",
+      "attempt": 1,
+      "task": ".workflow/tasks/T001/task.md",
+      "output": ".workflow/tasks/T001/attempt-01",
+      "report_found": false,
+      "candidate_id": null
+    }
+  },
+  {
+    "command": "start",
+    "actor": "guide-a",
+    "exit_code": 0,
+    "result": {
+      "ok": true,
+      "name": "CSV 耗时统计示例",
+      "version": "0.1.0",
+      "revision": 2,
+      "owner": "guide-a",
+      "goal": "离线汇总有效耗时并记录无效行，不改原始CSV",
+      "summary": "已准备 T001：交付可复算的离线统计脚本与结果",
+      "next_action": "执行当前任务；交付后由主线读取证据并提交审查。",
+      "active_task": "T001",
+      "last_accepted": null,
+      "entry": ".workflow/STATE.md",
+      "task_status": "running",
+      "attempt": 1,
+      "task": ".workflow/tasks/T001/task.md",
+      "output": ".workflow/tasks/T001/attempt-01",
+      "report_found": false,
+      "candidate_id": null
+    }
+  },
+  {
+    "command": "submit",
+    "actor": "guide-a",
+    "exit_code": 0,
+    "result": {
+      "ok": true,
+      "name": "CSV 耗时统计示例",
+      "version": "0.1.0",
+      "revision": 3,
+      "owner": "guide-a",
+      "goal": "离线汇总有效耗时并记录无效行，不改原始CSV",
+      "summary": "T001 已提交，待主线审查；自验声明：脚本可运行并输出统计结果；正确性待审查",
+      "next_action": "复算并核对各验收项",
+      "active_task": "T001",
+      "last_accepted": null,
+      "entry": ".workflow/STATE.md",
+      "task_status": "pending_review",
+      "attempt": 1,
+      "task": ".workflow/tasks/T001/task.md",
+      "output": ".workflow/tasks/T001/attempt-01",
+      "report_found": true,
+      "candidate_id": "9a55fa0ffb43e73a715c8126000b3d6f8a995141d4398a7fcf70fa10378bae45",
+      "current_file_checks": [
+        {
+          "task": "T001",
+          "files_match": true
+        }
+      ]
+    }
+  },
+  {
+    "command": "brief",
+    "actor": "guide-a",
+    "exit_code": 0,
+    "result": {
+      "name": "CSV 耗时统计示例",
+      "version": "0.1.0",
+      "revision": 3,
+      "owner": "guide-a",
+      "goal": "离线汇总有效耗时并记录无效行，不改原始CSV",
+      "summary": "T001 已提交，待主线审查；自验声明：脚本可运行并输出统计结果；正确性待审查",
+      "next_action": "复算并核对各验收项",
+      "active_task": "T001",
+      "last_accepted": null,
+      "entry": ".workflow/STATE.md",
+      "task_status": "pending_review",
+      "attempt": 1,
+      "task": ".workflow/tasks/T001/task.md",
+      "output": ".workflow/tasks/T001/attempt-01",
+      "report_found": true,
+      "candidate_id": "9a55fa0ffb43e73a715c8126000b3d6f8a995141d4398a7fcf70fa10378bae45",
+      "current_file_checks": [
+        {
+          "task": "T001",
+          "files_match": true
+        }
+      ],
+      "read_first": [
+        ".workflow/STATE.md",
+        ".workflow/PROJECT.md",
+        ".workflow/protocol/0.1.0.md",
+        ".workflow/tasks/T001/task.md"
+      ],
+      "instructions": "核对文件与现场；只读必要输入，不递归加载历史。不因报告存在自动接受，不重复派发。"
+    }
+  },
+  {
+    "command": "handoff",
+    "actor": "guide-a",
+    "exit_code": 0,
+    "result": {
+      "ok": true,
+      "name": "CSV 耗时统计示例",
+      "version": "0.1.0",
+      "revision": 4,
+      "owner": "guide-b",
+      "goal": "离线汇总有效耗时并记录无效行，不改原始CSV",
+      "summary": "T001 已提交，待主线审查；自验声明：脚本可运行并输出统计结果；正确性待审查",
+      "next_action": "读取冻结交付，复算后决定验收或返工",
+      "active_task": "T001",
+      "last_accepted": null,
+      "entry": ".workflow/STATE.md",
+      "task_status": "pending_review",
+      "attempt": 1,
+      "task": ".workflow/tasks/T001/task.md",
+      "output": ".workflow/tasks/T001/attempt-01",
+      "report_found": true,
+      "candidate_id": "9a55fa0ffb43e73a715c8126000b3d6f8a995141d4398a7fcf70fa10378bae45",
+      "handoff": ".workflow/history/handoff-0004.json",
+      "current_file_checks": [
+        {
+          "task": "T001",
+          "files_match": true
+        }
+      ]
+    }
+  },
+  {
+    "command": "brief",
+    "actor": "guide-b",
+    "exit_code": 0,
+    "result": {
+      "name": "CSV 耗时统计示例",
+      "version": "0.1.0",
+      "revision": 4,
+      "owner": "guide-b",
+      "goal": "离线汇总有效耗时并记录无效行，不改原始CSV",
+      "summary": "T001 已提交，待主线审查；自验声明：脚本可运行并输出统计结果；正确性待审查",
+      "next_action": "读取冻结交付，复算后决定验收或返工",
+      "active_task": "T001",
+      "last_accepted": null,
+      "entry": ".workflow/STATE.md",
+      "task_status": "pending_review",
+      "attempt": 1,
+      "task": ".workflow/tasks/T001/task.md",
+      "output": ".workflow/tasks/T001/attempt-01",
+      "report_found": true,
+      "candidate_id": "9a55fa0ffb43e73a715c8126000b3d6f8a995141d4398a7fcf70fa10378bae45",
+      "handoff": ".workflow/history/handoff-0004.json",
+      "current_file_checks": [
+        {
+          "task": "T001",
+          "files_match": true
+        }
+      ],
+      "read_first": [
+        ".workflow/STATE.md",
+        ".workflow/PROJECT.md",
+        ".workflow/protocol/0.1.0.md",
+        ".workflow/tasks/T001/task.md",
+        ".workflow/history/handoff-0004.json"
+      ],
+      "instructions": "核对文件与现场；只读必要输入，不递归加载历史。不因报告存在自动接受，不重复派发。"
+    }
+  },
+  {
+    "command": "review",
+    "actor": "guide-b",
+    "exit_code": 0,
+    "result": {
+      "ok": true,
+      "name": "CSV 耗时统计示例",
+      "version": "0.1.0",
+      "revision": 5,
+      "owner": "guide-b",
+      "goal": "离线汇总有效耗时并记录无效行，不改原始CSV",
+      "summary": "T001 审查结论：A1失败：5行/12毫秒，应为3行/20毫秒\n证据边界：脚本化教学审查，无独立Agent",
+      "next_action": "在第二轮跳过无效行，保留第一轮文件",
+      "active_task": "T001",
+      "last_accepted": null,
+      "entry": ".workflow/STATE.md",
+      "task_status": "ready",
+      "attempt": 2,
+      "task": ".workflow/tasks/T001/task.md",
+      "output": ".workflow/tasks/T001/attempt-02",
+      "report_found": false,
+      "candidate_id": null,
+      "handoff": ".workflow/history/handoff-0004.json"
+    }
+  },
+  {
+    "command": "start",
+    "actor": "guide-b",
+    "exit_code": 0,
+    "result": {
+      "ok": true,
+      "name": "CSV 耗时统计示例",
+      "version": "0.1.0",
+      "revision": 6,
+      "owner": "guide-b",
+      "goal": "离线汇总有效耗时并记录无效行，不改原始CSV",
+      "summary": "T001 审查结论：A1失败：5行/12毫秒，应为3行/20毫秒\n证据边界：脚本化教学审查，无独立Agent",
+      "next_action": "执行当前任务；交付后由主线读取证据并提交审查。",
+      "active_task": "T001",
+      "last_accepted": null,
+      "entry": ".workflow/STATE.md",
+      "task_status": "running",
+      "attempt": 2,
+      "task": ".workflow/tasks/T001/task.md",
+      "output": ".workflow/tasks/T001/attempt-02",
+      "report_found": false,
+      "candidate_id": null,
+      "handoff": ".workflow/history/handoff-0004.json"
+    }
+  },
+  {
+    "command": "submit",
+    "actor": "guide-b",
+    "exit_code": 0,
+    "result": {
+      "ok": true,
+      "name": "CSV 耗时统计示例",
+      "version": "0.1.0",
+      "revision": 7,
+      "owner": "guide-b",
+      "goal": "离线汇总有效耗时并记录无效行，不改原始CSV",
+      "summary": "T001 已提交，待主线审查；自验声明：脚本可运行并输出统计结果；正确性待审查",
+      "next_action": "复算并核对各验收项",
+      "active_task": "T001",
+      "last_accepted": null,
+      "entry": ".workflow/STATE.md",
+      "task_status": "pending_review",
+      "attempt": 2,
+      "task": ".workflow/tasks/T001/task.md",
+      "output": ".workflow/tasks/T001/attempt-02",
+      "report_found": true,
+      "candidate_id": "696920ab8b909ba44f6325577cb6fa5b32b954bafe56eaf3699f6ad6f4f5eb80",
+      "handoff": ".workflow/history/handoff-0004.json",
+      "current_file_checks": [
+        {
+          "task": "T001",
+          "files_match": true
+        }
+      ]
+    }
+  },
+  {
+    "command": "status",
+    "actor": "guide-b",
+    "exit_code": 0,
+    "result": {
+      "name": "CSV 耗时统计示例",
+      "version": "0.1.0",
+      "revision": 7,
+      "owner": "guide-b",
+      "goal": "离线汇总有效耗时并记录无效行，不改原始CSV",
+      "summary": "T001 已提交，待主线审查；自验声明：脚本可运行并输出统计结果；正确性待审查",
+      "next_action": "复算并核对各验收项",
+      "active_task": "T001",
+      "last_accepted": null,
+      "entry": ".workflow/STATE.md",
+      "task_status": "pending_review",
+      "attempt": 2,
+      "task": ".workflow/tasks/T001/task.md",
+      "output": ".workflow/tasks/T001/attempt-02",
+      "report_found": true,
+      "candidate_id": "696920ab8b909ba44f6325577cb6fa5b32b954bafe56eaf3699f6ad6f4f5eb80",
+      "handoff": ".workflow/history/handoff-0004.json",
+      "current_file_checks": [
+        {
+          "task": "T001",
+          "files_match": true
+        }
+      ]
+    }
+  },
+  {
+    "command": "review",
+    "actor": "guide-b",
+    "exit_code": 0,
+    "result": {
+      "ok": true,
+      "name": "CSV 耗时统计示例",
+      "version": "0.1.0",
+      "revision": 8,
+      "owner": "guide-b",
+      "goal": "离线汇总有效耗时并记录无效行，不改原始CSV",
+      "summary": "T001 审查结论：A1-A3逐项核对通过，接受第二轮冻结交付\n证据边界：仅示例输入，不代表用户或独立Agent验收",
+      "next_action": "交用户查看演示结果",
+      "active_task": null,
+      "last_accepted": "T001",
+      "entry": ".workflow/STATE.md",
+      "current_file_checks": [
+        {
+          "task": "T001",
+          "files_match": true
+        }
+      ]
+    }
+  },
+  {
+    "command": "note",
+    "actor": "guide-b",
+    "exit_code": 0,
+    "result": {
+      "ok": true,
+      "name": "CSV 耗时统计示例",
+      "version": "0.1.0",
+      "revision": 9,
+      "owner": "guide-b",
+      "goal": "离线汇总有效耗时并记录无效行，不改原始CSV",
+      "summary": "T001第二轮已接受：有效3行，均值20毫秒，无效r3/r4；首轮错误与返工记录保留。",
+      "next_action": "演示结束；不自动开展其他项目任务。",
+      "active_task": null,
+      "last_accepted": "T001",
+      "entry": ".workflow/STATE.md",
+      "current_file_checks": [
+        {
+          "task": "T001",
+          "files_match": true
+        }
+      ]
+    }
+  },
+  {
+    "command": "check",
+    "actor": "guide-b",
+    "exit_code": 0,
+    "result": {
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "boundary": "只检查记录一致性和文件内容，不证明测试执行、身份真实或用户验收。"
+    }
+  },
+  {
+    "command": "brief",
+    "actor": "guide-b",
+    "exit_code": 0,
+    "result": {
+      "name": "CSV 耗时统计示例",
+      "version": "0.1.0",
+      "revision": 9,
+      "owner": "guide-b",
+      "goal": "离线汇总有效耗时并记录无效行，不改原始CSV",
+      "summary": "T001第二轮已接受：有效3行，均值20毫秒，无效r3/r4；首轮错误与返工记录保留。",
+      "next_action": "演示结束；不自动开展其他项目任务。",
+      "active_task": null,
+      "last_accepted": "T001",
+      "entry": ".workflow/STATE.md",
+      "current_file_checks": [
+        {
+          "task": "T001",
+          "files_match": true
+        }
+      ],
+      "read_first": [
+        ".workflow/STATE.md",
+        ".workflow/PROJECT.md",
+        ".workflow/protocol/0.1.0.md"
+      ],
+      "instructions": "核对文件与现场；只读必要输入，不递归加载历史。不因报告存在自动接受，不重复派发。"
+    }
+  }
+]
